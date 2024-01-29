@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img src="../backgrounf.png" style="width: 400px;" alt=""> -->
+   
+    <section>
+        <ul>
+            <li><a href="#" data-text="Charan"><img src="./bat.png">Charan</a></li>
+            <li><a href="#" data-text="Kushal"><img src="./iron-man-logo-mens-t-shirt-removebg-preview.png">Kushal</a></li>
+            <li><a href="#" data-text="Keerthi"><img src="./spiderman-logo-illustration-958x575-removebg-preview.png">Keerthisan</a></li>
+            <li><a href="#" data-text="Darshan"><img src="./92817682d256cb4619fccadaa8ddc956.png">Darshan</a></li>
+          
+            <div class="cursor"></div>
+        </ul>
+    </section>
+      
+    <script>
+        let nav = document.documentElement;
+        nav.addEventListener("mousemove", e => {
+            nav.style.setProperty('--x', e.clientX + "px ");     
+            nav.style.setProperty('--y', e.clientY + "px ");     
+        })
+    </script>
+</body>
+</html>
